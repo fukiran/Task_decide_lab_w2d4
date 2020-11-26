@@ -1,3 +1,4 @@
-class TaskDecider:
-    def __init__(self):
-        pass
+from src.task import Task
+
+def TaskDecider():
+    pass
