@@ -7,8 +7,4 @@ def get_preferred_option(task_1, task_2):
         return "Cook Dinner"
     elif (task_1.description or task_2.description == "Clean Windows") and (task_1.description or task_2.description == "Wash Dishes"):
         return "Clean Windows"
-    # elif task_1.name == "" and task_2.name == "":
-    #     return ""
 
-
-    # return task_2.description

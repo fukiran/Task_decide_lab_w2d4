@@ -13,5 +13,11 @@ class TestTaskDecider(unittest.TestCase):
     def test_get_preferred_option__prefers_dishes_over_dinner(self):
         self.assertEqual("Clean Dishes", get_preferred_option(self.clean_dishes,self.cook_dinner))
 
-    def test_get_preferred_option__prefers_dishes_over_dinner2(self):
+    def test_get_preferred_option__prefers_dishes_over_dinner_swapped(self):
         self.assertEqual("Clean Dishes", get_preferred_option(self.cook_dinner,self.clean_dishes))
+
+    def test_get_preferred_option__prefers_dinner_over_windows(self):
+        self.assertEqual("Clean Dishes", get_preferred_option(self.cook_dinner,self.clean_windows))
+    
+    def test_get_preferred_option__prefers_dinner_over_windows_swapped(self):
+        self.assertEqual("Clean Dishes", get_preferred_option(self.clean_windows,self.cook_dinner))
